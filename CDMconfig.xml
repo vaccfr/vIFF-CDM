@@ -10,10 +10,10 @@
 	<invalidateAtTsat mode="true" />
 	<invalidateAtTobt mode="false" />
 	<readySetTsac mode="true" />
-	<Rates url="https://api.beluxvacc.org/cdm-data/rate.txt" />
-	<Taxizones url="https://api.beluxvacc.org/cdm-data/taxizones.txt" />
-	<Ctot url="https://api.beluxvacc.org/cdm-data/ctot.txt" />
-	<sidInterval url="https://api.beluxvacc.org/cdm-data/sidInterval.txt" />
+	<Rates url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/rate.txt" />
+	<Taxizones url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/taxizones.txt" />
+	<Ctot url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/ctot.txt" />
+	<sidInterval url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/sidInterval.txt" />
 	<DefaultTaxiTime minutes="15" />
 	<DeIceTimes light="5" medium="9" heavy="12" super="15"/>
 	<DeIceRemTaxi rem1Name= "" rem1="" rem2Name= "" rem2="" rem3Name= "" rem3="" rem4Name= "" rem4="" rem5Name= "" rem5=""/>
