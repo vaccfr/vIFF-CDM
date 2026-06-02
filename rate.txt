@@ -7,9 +7,54 @@ LFPG:A:09L:09R,08R,08L:D:09R:09L,08L,08R:*:36_18
 LFPG:A:26L:27L,27R,26R:D:26R:27R,27L,26L:*:36_18
 LFPG:A:08R:09R,09L,08L:D:08L:09L,09R,08R:*:36_18
 
-# All runways
+# Normal configuration
 LFPG:A:27R,26L:27L,26R:D:27L,26R:27R,26L:*:72_36
 LFPG:A:09L,08R:09R,08L:D:09R,08L:09L,08R:*:72_36
 
 # Fallback (ex: when 3 runways are active)
 LFPG:A:*:*:D:*:*:*:40_20
+
+# LFPO
+
+# Single runway
+LFPO:A:25:24:D:25:24:*:22_10
+LFPO:A:24:25:D:24:25:*:22_10
+LFPO:A:07:06:D:07:06:*:22_10
+LFPO:A:06:07:D:06:07:*:22_10
+
+# Normal configuration
+LFPO:A:25:24:D:25:24:*:36_15
+LFPO:A:06:07:D:07:06:*:36_15
+
+# Fallback (RWY 02/20 in use and not yet defined)
+LFPO:A:*:*:D:*:*:*:20_10
+
+# LFMN
+
+# Single runway
+LFMN:A:04R:04L:D:04R:04L:*:20_10
+LFMN:A:04L:04R:D:04L:04R:*:20_10
+LFMN:A:22R:22L:D:22R:22L:*:20_10
+LFMN:A:22L:22R:D:22L:22R:*:20_10
+
+# Normal configuration
+LFMN:A:04L:04R:D:04R:04L:*:30_12
+LFMN:A:22R:22L:D:22L:22R:*:30_12
+
+# Fallback
+LFMN:A:*:*:D:*:*:*:20_10
+
+# LFLL
+
+# Single runway
+LFLL:A:35R:35L:D:35R:35L:*:22_10
+LFLL:A:35L:35R:D:35L:35R:*:20_10
+LFLL:A:17R:17L:D:17R:17L:*:20_10
+LFLL:A:17L:17R:D:17L:17R:*:22_10
+
+# Normal configuration
+LFLL:A:35R:35L:D:35L:35R:*:34_12
+LFLL:A:17L:17R:D:17R:17L:*:34_12
+
+# Fallback
+LFLL:A:*:*:D:*:*:*:20_10
