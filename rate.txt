@@ -58,3 +58,34 @@ LFLL:A:17L:17R:D:17R:17L:*:34_12
 
 # Fallback
 LFLL:A:*:*:D:*:*:*:20_10
+
+# LFBO
+
+# Single runway
+LFBO:A:32R:32L:D:32R:32L:*:20_10
+LFBO:A:32L:32R:D:32L:32R:*:20_12
+LFBO:A:14R:14L:D:14R:14L:*:20_12
+LFBO:A:14L:14R:D:14L:14R:*:20_10
+
+# Normal configuration
+LFBO:A:32L:32R:D:32R,32L:*:32R,32L:24_10
+LFBO:A:14R:14L:D:14L,14R:*:14L,14R:24_10
+
+# Fallback
+LFBO:*:*:D:*:*:*:20_10
+
+# LFML
+
+# Night configuration
+LFML:A:13L:13R,31,31R,31L:D:31R:13L,13R,31L:*:12_0
+
+# Normal configuration
+LFML:A:13L:13R:D:13L:13R:*:20_8
+LFML:A:31R:31L:D:31R:31L:*:20_8
+
+# Secondary runway
+LFML:A:13R:13L:D:13R:13L:*:20_0
+LFML:A:31L:31R:D:31L:31R:*:20_0
+
+# Fallback
+LFML:*:*:D*:*:*:20_8
