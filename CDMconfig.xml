@@ -4,7 +4,7 @@
 	<rateLvo ops="10" />
 	<expiredCtot time="15" />
 	<realMode mode="true" />
-	<bmi mode="false" />
+	<bmi mode="true" />
 	<pilotTobt mode="true" />
 	<autoAtot mode="false" />
 	<invalidateAtTsat mode="true" />
@@ -22,16 +22,14 @@
 	<Debug mode="false" />
 	<FlowRestrictions url="" />
 	<vdgsFileType type="3"/>
-	<ftpHost host="" />
-	<ftpUser user="" />
-	<ftpPassword password="" />
-	<sftpConnection mode="false" />
+	<viffSystem url="https://api.viffsys.com" />
 	<Server mode="true" />
 	<Su_Wait mode="false" />
 	<flashingMode tobtLastMin="false" tsatFirstMin="true" tsatLastMin="true"/>
-	<reqTobtPriority mode="false" />
+	<reqTobtPriority mode="true" />
 	<eventPriority mode="true" />
 	<autoSetTobtFromEvSlot mode="false" />
 	<remarksOptionCtot mode="false" />
-	<PrivateMessage text="Bonjour, please monitor https://vats.im/vdgs for CDM and ATFCM updates. Update your TOBT or EOBT as desired." />
+	<loading text="...." />
+	<PrivateMessage text="Bonjour, please monitor https://vats.im/vdgs for CDM and ATFCM updates." />
 </CDM>
