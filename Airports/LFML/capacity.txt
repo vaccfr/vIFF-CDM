@@ -1,0 +1,4 @@
+# Arrival Capacity for LFML - Marseille-Provence Airport
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFML,22

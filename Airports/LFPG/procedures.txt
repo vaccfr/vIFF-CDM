@@ -1,0 +1,4 @@
+# Procedures for LFPG - Paris-CDG
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFPG:SID:A,B,D,E,G,H,K,L,Z:STAR:E,H,J,P,W,X

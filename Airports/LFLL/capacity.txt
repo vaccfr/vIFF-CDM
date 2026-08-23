@@ -1,0 +1,4 @@
+# Arrival Capacity for LFLL - Saint-Exupery
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFLL,36

@@ -1,0 +1,4 @@
+# Procedures for LFPO - Paris-Orly
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFPO:SID:E,F,G,H,Q,R,S,W,X,Y:STAR:E,W

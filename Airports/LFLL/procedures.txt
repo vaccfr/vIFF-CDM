@@ -1,0 +1,4 @@
+# Procedures for LFLL - Saint-Exupery
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFLL:SID:N,S:STAR:N,S

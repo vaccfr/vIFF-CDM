@@ -1,0 +1,4 @@
+# Procedures for LFMN - Nice
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFMN:SID:A,B,C,P,X,Y,Z:STAR:R,T

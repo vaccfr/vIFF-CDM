@@ -1,0 +1,15 @@
+# Rates for LFMN - Nice
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFMN:A:04L:04R:D:04R:04L:*:30_12
+LFMN:A:22R:22L:D:22L:22R:*:30_12
+
+# Single runway
+LFMN:A:04R:04L:D:04R:04L:*:20_10
+LFMN:A:04L:04R:D:04L:04R:*:20_10
+LFMN:A:22R:22L:D:22R:22L:*:20_10
+LFMN:A:22L:22R:D:22L:22R:*:20_10
+
+# Fallback
+LFMN:A:*:*:D:*:*:*:20_10

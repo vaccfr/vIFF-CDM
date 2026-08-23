@@ -1,0 +1,4 @@
+# Arrival Capacity for LFBO - Toulouse Blagnac
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFBO,23

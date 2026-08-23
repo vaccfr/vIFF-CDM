@@ -1,0 +1,4 @@
+# Arrival Capacity for LFPO - Paris-Orly
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFPO,38

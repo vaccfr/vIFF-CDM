@@ -1,0 +1,15 @@
+# Rates for LFBO - Toulouse Blagnac
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFBO:A:32L:32R:D:32R,32L:*:32R,32L:23_10
+LFBO:A:14R:14L:D:14L,14R:*:14L,14R:23_10
+
+# Single runway
+LFBO:A:32R:32L:D:32R:32L:*:23_10
+LFBO:A:32L:32R:D:32L:32R:*:23_12
+LFBO:A:14R:14L:D:14R:14L:*:23_12
+LFBO:A:14L:14R:D:14L:14R:*:23_10
+
+# Fallback
+LFBO:*:*:D:*:*:*:23_10

@@ -1,0 +1,4 @@
+# Arrival Capacity for LFPG - Paris-CDG
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFPG,66

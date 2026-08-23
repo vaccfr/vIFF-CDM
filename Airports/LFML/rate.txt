@@ -1,0 +1,16 @@
+# Rates for LFML - Marseille-Provence Airport
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFML:A:13L:13R:D:13L:13R:*:22_8
+LFML:A:31R:31L:D:31R:31L:*:22_8
+
+# Night configuration
+LFML:A:13L:13R,31,31R,31L:D:31R:13L,13R,31L:*:12_0
+
+# Secondary runway
+LFML:A:13R:13L:D:13R:13L:*:22_0
+LFML:A:31L:31R:D:31L:31R:*:22_0
+
+# Fallback
+LFML:*:*:D*:*:*:22_8

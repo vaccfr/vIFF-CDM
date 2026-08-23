@@ -1,0 +1,4 @@
+# Arrival Capacity for LFMN - Nice
+# Format: AIRPORT:MAX_ARRIVAL_ONLY_CAPACITY
+
+LFMN,30

@@ -1,0 +1,15 @@
+# Rates for LFPO - Paris-Orly
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFPO:A:25:24:D:25:24:*:38_15
+LFPO:A:06:07:D:07:06:*:38_15
+
+# Single runway
+LFPO:A:25:24:D:25:24:*:22_10
+LFPO:A:24:25:D:24:25:*:22_10
+LFPO:A:07:06:D:07:06:*:22_10
+LFPO:A:06:07:D:06:07:*:22_10
+
+# Fallback (RWY 02/20 in use and not yet defined)
+LFPO:A:*:*:D:*:*:*:20_10

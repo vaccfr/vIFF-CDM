@@ -1,0 +1,4 @@
+# Procedures for LFBO - Toulouse Blagnac
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFBO:SID:A,B,H:STAR:N,S

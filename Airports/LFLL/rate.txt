@@ -1,0 +1,15 @@
+# Rates for for LFLL - Saint-Exupery
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFLL:A:35R:35L:D:35L:35R:*:36_12
+LFLL:A:17L:17R:D:17R:17L:*:36_12
+
+# Single runway
+LFLL:A:35R:35L:D:35R:35L:*:22_10
+LFLL:A:35L:35R:D:35L:35R:*:20_10
+LFLL:A:17R:17L:D:17R:17L:*:20_10
+LFLL:A:17L:17R:D:17L:17R:*:22_10
+
+# Fallback
+LFLL:A:*:*:D:*:*:*:20_10

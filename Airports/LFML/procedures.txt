@@ -1,0 +1,4 @@
+# Procedures for LFML - Marseille-Provence Airport
+# Format: # <AIRPORT>:SID:<letters>:STAR:<letters> example: LEBL:SID:Q:STAR:W,Z
+
+LFML:SID:B,C,N,S,T,U:STAR:D,G,L,R
