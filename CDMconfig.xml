@@ -12,7 +12,7 @@
 	<readySetTsac mode="true" />
 	<Rates url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/rate.txt" />
 	<Taxizones url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/taxizones.txt" />
-	<Ctot url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/ctot.txt" />
+	<Slots url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/ctot.txt" />
 	<sidInterval url="https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/sidInterval.txt" />
 	<DefaultTaxiTime minutes="15" />
 	<DeIceTimes light="5" medium="9" heavy="12" super="15"/>
