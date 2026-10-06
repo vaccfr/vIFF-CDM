@@ -1,4 +1,4 @@
-<!-- French vACC vIFF-CDM banner will be added here. -->
+![French vACC vIFF-CDM Banner](.github/img/vaccfr_viff_cdm.jpg)
 
 # 🇫🇷 French vACC vIFF-CDM Configuration
 
@@ -115,11 +115,6 @@ required.
 
 ## 🤝 Contributing
 
-When adding or updating an airport:
-
-1. edit the source files under `Airports/<ICAO>/`;
-2. run the local build and review the generated output; and
-3. commit both the source changes and any regenerated live files.
-
-The workflow will perform the same build again after the change reaches
-`main`, ensuring the live configuration remains synchronized.
+Contributions are welcome. See the
+[contribution guidelines](CONTRIBUTING.md) for airport source requirements,
+local validation, and the pull-request checklist.
