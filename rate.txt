@@ -1,50 +1,25 @@
-# LFPG
-
-# Northern runways only
-LFPG:A:27R:27L,26L,26R:D:27L:27R,26R,26L:*:36_18
-LFPG:A:09L:09R,08R,08L:D:09R:09L,08L,08R:*:36_18
-# Southern runways only
-LFPG:A:26L:27L,27R,26R:D:26R:27R,27L,26L:*:36_18
-LFPG:A:08R:09R,09L,08L:D:08L:09L,09R,08R:*:36_18
+# Rates for LFBO - Toulouse Blagnac
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
 
 # Normal configuration
-LFPG:A:27R,26L:27L,26R:D:27L,26R:27R,26L:*:72_36
-LFPG:A:09L,08R:09R,08L:D:09R,08L:09L,08R:*:72_36
-
-# Fallback (ex: when 3 runways are active)
-LFPG:A:*:*:D:*:*:*:40_20
-
-# LFPO
+LFBO:A:32L:32R:D:32R,32L:*:32R,32L:23_10
+LFBO:A:14R:14L:D:14L,14R:*:14L,14R:23_10
 
 # Single runway
-LFPO:A:25:24:D:25:24:*:22_10
-LFPO:A:24:25:D:24:25:*:22_10
-LFPO:A:07:06:D:07:06:*:22_10
-LFPO:A:06:07:D:06:07:*:22_10
-
-# Normal configuration
-LFPO:A:25:24:D:25:24:*:36_15
-LFPO:A:06:07:D:07:06:*:36_15
-
-# Fallback (RWY 02/20 in use and not yet defined)
-LFPO:A:*:*:D:*:*:*:20_10
-
-# LFMN
-
-# Single runway
-LFMN:A:04R:04L:D:04R:04L:*:20_10
-LFMN:A:04L:04R:D:04L:04R:*:20_10
-LFMN:A:22R:22L:D:22R:22L:*:20_10
-LFMN:A:22L:22R:D:22L:22R:*:20_10
-
-# Normal configuration
-LFMN:A:04L:04R:D:04R:04L:*:30_12
-LFMN:A:22R:22L:D:22L:22R:*:30_12
+LFBO:A:32R:32L:D:32R:32L:*:23_10
+LFBO:A:32L:32R:D:32L:32R:*:23_12
+LFBO:A:14R:14L:D:14R:14L:*:23_12
+LFBO:A:14L:14R:D:14L:14R:*:23_10
 
 # Fallback
-LFMN:A:*:*:D:*:*:*:20_10
+LFBO:*:*:D:*:*:*:23_10
 
-# LFLL
+# Rates for for LFLL - Saint-Exupery
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFLL:A:35R:35L:D:35L:35R:*:36_12
+LFLL:A:17L:17R:D:17R:17L:*:36_12
 
 # Single runway
 LFLL:A:35R:35L:D:35R:35L:*:22_10
@@ -52,40 +27,72 @@ LFLL:A:35L:35R:D:35L:35R:*:20_10
 LFLL:A:17R:17L:D:17R:17L:*:20_10
 LFLL:A:17L:17R:D:17L:17R:*:22_10
 
-# Normal configuration
-LFLL:A:35R:35L:D:35L:35R:*:34_12
-LFLL:A:17L:17R:D:17R:17L:*:34_12
-
 # Fallback
 LFLL:A:*:*:D:*:*:*:20_10
 
-# LFBO
-
-# Single runway
-LFBO:A:32R:32L:D:32R:32L:*:20_10
-LFBO:A:32L:32R:D:32L:32R:*:20_12
-LFBO:A:14R:14L:D:14R:14L:*:20_12
-LFBO:A:14L:14R:D:14L:14R:*:20_10
+# Rates for LFML - Marseille-Provence Airport
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
 
 # Normal configuration
-LFBO:A:32L:32R:D:32R,32L:*:32R,32L:24_10
-LFBO:A:14R:14L:D:14L,14R:*:14L,14R:24_10
-
-# Fallback
-LFBO:*:*:D:*:*:*:20_10
-
-# LFML
+LFML:A:13L:13R:D:13L:13R:*:22_8
+LFML:A:31R:31L:D:31R:31L:*:22_8
 
 # Night configuration
 LFML:A:13L:13R,31,31R,31L:D:31R:13L,13R,31L:*:12_0
 
-# Normal configuration
-LFML:A:13L:13R:D:13L:13R:*:20_8
-LFML:A:31R:31L:D:31R:31L:*:20_8
-
 # Secondary runway
-LFML:A:13R:13L:D:13R:13L:*:20_0
-LFML:A:31L:31R:D:31L:31R:*:20_0
+LFML:A:13R:13L:D:13R:13L:*:22_0
+LFML:A:31L:31R:D:31L:31R:*:22_0
 
 # Fallback
-LFML:*:*:D*:*:*:20_8
+LFML:*:*:D*:*:*:22_8
+
+# Rates for LFMN - Nice
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFMN:A:04L:04R:D:04R:04L:*:30_12
+LFMN:A:22R:22L:D:22L:22R:*:30_12
+
+# Single runway
+LFMN:A:04R:04L:D:04R:04L:*:20_10
+LFMN:A:04L:04R:D:04L:04R:*:20_10
+LFMN:A:22R:22L:D:22R:22L:*:20_10
+LFMN:A:22L:22R:D:22L:22R:*:20_10
+
+# Fallback
+LFMN:A:*:*:D:*:*:*:20_10
+
+# Rates for LFPG - Paris-CDG
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFPG:A:27R,26L:27L,26R:D:27L,26R:27R,26L:*:66_36
+LFPG:A:09L,08R:09R,08L:D:09R,08L:09L,08R:*:66_36
+
+# Northern runways only
+LFPG:A:27R:27L,26L,26R:D:27L:27R,26R,26L:*:36_18
+LFPG:A:09L:09R,08R,08L:D:09R:09L,08L,08R:*:36_18
+
+# Southern runways only
+LFPG:A:26L:27L,27R,26R:D:26R:27R,27L,26L:*:36_18
+LFPG:A:08R:09R,09L,08L:D:08L:09L,09R,08R:*:36_18
+
+# Fallback (ex: when 3 runways are active)
+LFPG:A:*:*:D:*:*:*:40_20
+
+# Rates for LFPO - Paris-Orly
+# Format: AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
+
+# Normal configuration
+LFPO:A:25:24:D:25:24:*:38_15
+LFPO:A:06:07:D:07:06:*:38_15
+
+# Single runway
+LFPO:A:25:24:D:25:24:*:22_10
+LFPO:A:24:25:D:24:25:*:22_10
+LFPO:A:07:06:D:07:06:*:22_10
+LFPO:A:06:07:D:06:07:*:22_10
+
+# Fallback (RWY 02/20 in use and not yet defined)
+LFPO:A:*:*:D:*:*:*:20_10

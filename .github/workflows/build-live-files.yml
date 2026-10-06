@@ -1,0 +1,48 @@
+name: Build live configuration files
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - sidInterval.txt
+      - rate.txt
+      - taxizones.txt
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-live-files-main
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Update checkout
+        run: git pull --ff-only origin main
+
+      - name: Build live files
+        run: python3 scripts/build_live_files.py
+
+      - name: Commit generated files
+        run: |
+          if git diff --quiet -- sidInterval.txt rate.txt taxizones.txt; then
+            echo "Live files are already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sidInterval.txt rate.txt taxizones.txt
+          git commit -m "chore: rebuild live configuration files"
+          git push origin HEAD:main
