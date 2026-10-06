@@ -1,43 +1,125 @@
-# vIFF-CDM Config
+<!-- French vACC vIFF-CDM banner will be added here. -->
 
-## CDM Airports
+# 🇫🇷 French vACC vIFF-CDM Configuration
 
-**LFPG**, **LFPO**, **LFMN**, **LFBO**, **LFLL**, **LFML**, 
+Welcome to the official repository for the **French vACC vIFF-CDM
+configuration** used on the **VATSIM network**.
 
-## File Description
+This repository supports the **distribution, maintenance, and automatic
+generation** of Collaborative Decision Making configuration data for supported
+French airports. Airport-specific source files are kept together, while the
+live files consumed by vIFF-CDM are generated automatically.
 
-### CDMconfig.xml
-This files is used to configure the EuroScope CDM plugin
+---
 
-### ctot.txt
-This files is used to associate CTOT to CID during slotted events
+> ⚠️ **Generated Files**
+>
+> `rate.txt`, `sidInterval.txt`, and `taxizones.txt` are generated files and
+> should not be edited directly.
+>
+> Make changes in the relevant `Airports/<ICAO>/` directory instead.
 
-### rate.txt
-This files is used to configure CDM airports rate based on runway config
+> 💡 **Automatic Generation**
+>
+> After a change is pushed to `main`, a GitHub Actions workflow merges the
+> airport data, rebuilds the live files, and commits updated outputs back to
+> `main` automatically.
 
-### sidInterval.txt
-This files is used to configure CDM airports minimum SID interval time (currently setup to enforce 2 mins between same SID departures)
+---
 
-### taxizones.txt
-This files is used to configure CDM airports taxi time based on gate
+## 📂 Live Configuration Files
 
-## Updating the live files
+The latest live configuration is always available from the `main` branch:
 
-The files in each `Airports/<ICAO>/` directory are the source files.
-Each taxi-area feature must have an `icao` property matching its airport
-directory. The build stops with an error if an airport source file is missing
-or a taxi-area feature is stored under the wrong airport.
-After each push to `main`, the **Build live configuration files** workflow:
+| File | Description |
+| --- | --- |
+| [`CDMconfig.xml`](https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/CDMconfig.xml) | Main EuroScope vIFF-CDM plugin configuration |
+| [`ctot.txt`](https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/ctot.txt) | Associates CTOTs with CIDs during slotted events |
+| [`rate.txt`](https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/rate.txt) | Airport rates for each runway configuration |
+| [`sidInterval.txt`](https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/sidInterval.txt) | Minimum departure intervals between SID combinations |
+| [`taxizones.txt`](https://raw.githubusercontent.com/vaccfr/vIFF-CDM/refs/heads/main/taxizones.txt) | Taxi times by airport area and departure runway |
 
-1. merges every `Airports/<ICAO>/interval.txt` into `sidInterval.txt`;
-2. merges every `Airports/<ICAO>/rate.txt` into `rate.txt`;
-3. converts every `Airports/<ICAO>/TaxiAreas.geojson` into `taxizones.txt`; and
-4. commits changed live files back to `main`.
+---
 
-Airport directories are merged in alphabetical ICAO order. To rebuild the live
-files locally, run the following command from the repository root. The three
-root output files are generated and should not be edited directly.
+## 🗺️ Supported Airports
+
+### 🟦 LFBB — Bordeaux FIR
+
+- **LFBO** — Toulouse Blagnac
+
+---
+
+### 🟥 LFFF — Paris FIR
+
+- **LFPG** — Paris Charles de Gaulle
+- **LFPO** — Paris Orly
+
+---
+
+### 🟨 LFMM — Marseille FIR
+
+- **LFLL** — Lyon Saint-Exupéry
+- **LFML** — Marseille Provence
+- **LFMN** — Nice Côte d'Azur
+
+---
+
+## 🗂️ Repository Structure
+
+Each supported airport has its own source directory:
+
+```text
+Airports/
+└── <ICAO>/
+    ├── capacity.txt
+    ├── interval.txt
+    ├── procedures.txt
+    ├── rate.txt
+    └── TaxiAreas.geojson
+```
+
+The automation scripts are stored together in `scripts/`, while the workflow
+definition is stored in `.github/workflows/`.
+
+---
+
+## 🛠️ Updating Airport Data
+
+Update the source files inside the relevant airport directory:
+
+- `interval.txt` is merged into the root `sidInterval.txt`;
+- `rate.txt` is merged into the root `rate.txt`; and
+- `TaxiAreas.geojson` is converted and merged into the root `taxizones.txt`.
+
+Every taxi-area feature must have an `icao` property matching its airport
+directory. The build stops if a required source is missing or a feature is
+stored under the wrong airport.
+
+Airport directories are processed in alphabetical ICAO order.
+
+---
+
+## ⚙️ Local Build
+
+To regenerate the three live files locally, run the following command from the
+repository root:
 
 ```shell
 python scripts/build_live_files.py
 ```
+
+The build uses only the Python standard library; no additional packages are
+required.
+
+---
+
+## 🤝 Contributing
+
+When adding or updating an airport:
+
+1. edit the source files under `Airports/<ICAO>/`;
+2. run the local build and review the generated output; and
+3. commit both the source changes and any regenerated live files.
+
+The workflow will perform the same build again after the change reaches
+`main`, ensuring the live configuration remains synchronized.
